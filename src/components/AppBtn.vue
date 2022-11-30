@@ -6,9 +6,8 @@
   >{{symbol}}</button>
 </template>
 <script>
-//import { computed } from '@vue/reactivity';
 export default {
-  name: 'calc-btn',
+  name: 'AppBtn',
   props: {
     symbol: String,
     equal: {

@@ -3,29 +3,29 @@
   <div class="container">
   <div class="calc-description">{{currentResult || 0}}</div>
   <div class="calc-result"><hr>{{finalResult || 0}}</div>
-  <AppBtn :delete="true" symbol="C" @click = "clean()"/>
-  <AppBtn :sign="true" symbol="%" @click = "percentage()"/>
-  <AppBtn :sign="true" symbol="&#8656;" @click = "erase()"/>
-  <AppBtn :sign="true" symbol="&#247;" @click = "input('/')"/>
+  <AppBtn :delete="true" @click = "clean()">C</AppBtn>
+  <AppBtn :sign="true" @click = "percentage()">%</AppBtn>
+  <AppBtn :sign="true" @click = "erase()">&#8656;</AppBtn>
+  <AppBtn :sign="true" @click = "input('/')">&#247;</AppBtn>
 
-  <AppBtn symbol="7" @click = "input(7)"/>
-  <AppBtn symbol="8" @click = "input(8)"/>
-  <AppBtn symbol="9" @click = "input(9)"/>
-  <AppBtn :sign="true" symbol="*" @click = "input('*')"/>
+  <AppBtn @click = "input(7)">7</AppBtn>
+  <AppBtn @click = "input(8)">8</AppBtn>
+  <AppBtn @click = "input(9)">9</AppBtn>
+  <AppBtn :sign="true" @click = "input('*')">*</AppBtn>
 
-  <AppBtn symbol="4"  @click = "input(4)"/>
-  <AppBtn symbol="5" @click = "input(5)"/>
-  <AppBtn symbol="6" @click = "input(6)"/>
-  <AppBtn :sign="true" symbol="-" @click = "input('-')"/>
+  <AppBtn @click = "input(4)">4</AppBtn>
+  <AppBtn @click = "input(5)">5</AppBtn>
+  <AppBtn @click = "input(6)">6</AppBtn>
+  <AppBtn :sign="true" @click = "input('-')">-</AppBtn>
 
-  <AppBtn symbol="1" @click = "input(1)"/>
-  <AppBtn symbol="2" @click = "input(2)"/>
-  <AppBtn symbol="3" @click = "input(3)"/>
-  <AppBtn :sign="true" symbol="+" @click = "input('+')"/>
+  <AppBtn symbol="1" @click = "input(1)">1</AppBtn>
+  <AppBtn symbol="2" @click = "input(2)">2</AppBtn>
+  <AppBtn symbol="3" @click = "input(3)">3</AppBtn>
+  <AppBtn :sign="true" @click = "input('+')">+</AppBtn>
 
-  <AppBtn :sign="true" symbol="." @click = "dot()"/>
-  <AppBtn symbol="0" @click = "input(0)"/>
-  <AppBtn :equal="true" symbol="=" @click = "count()"/>
+  <AppBtn :sign="true" @click = "dot()">.</AppBtn>
+  <AppBtn @click = "input(0)">0</AppBtn>
+  <AppBtn :equal="true" @click = "count()">=</AppBtn>
   </div>
 </div>
 </template> 

@@ -3,7 +3,7 @@
   class="calc__btn"
   :class="className"
   type="button"
-  >{{symbol}}</button>
+  ><slot></slot></button>
 </template>
 <script>
 export default {
